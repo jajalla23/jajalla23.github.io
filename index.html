@@ -90,6 +90,10 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .math24wrap { width: 800px; height: 800px; padding: 0; overflow: hidden; }
+      .math24frame { width: 800px; height: 800px; border: 1px solid black; }
+      .math24frame { zoom: 0.5; -moz-transform: scale(0.20); -moz-transform-origin: 0 0; }
     </style>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   </head>
@@ -223,21 +227,77 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="./assets/img/math24logo.svg" height="100%" width="100%" />
+            </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Perform math operations (add, subtract, multiply, divide) on 4 numbers on the screen until you get 24</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#math24modal">View</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <!--<small class="text-body-secondary">9 mins</small>-->
               </div>
             </div>
           </div>
         </div>
+        <div class="modal fade" tabindex="-1" id="math24modal">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="math24ModalCenteredScrollableTitle">Math24</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="math24wrap">
+                  <iframe class="math24frame" src="https://129.146.227.166:2083/" title="Math 24"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="./assets/img/math24logo.svg" height="100%" width="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Perform math operations (add, subtract, multiply, divide) on 4 numbers on the screen until you get 24</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#math24modal">View</button>
+                </div>
+                <!--<small class="text-body-secondary">9 mins</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" id="math24modal">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="math24ModalCenteredScrollableTitle">Math24</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="math24wrap">
+                  <iframe class="math24frame" src="https://129.146.227.166:2083/" title="Math 24"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div> 
+        </div>  
+        <!--
         <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -360,6 +420,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
   </div>
