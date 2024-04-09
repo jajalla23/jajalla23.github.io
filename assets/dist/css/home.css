@@ -1,0 +1,7 @@
+.project-logo {
+   cursor: pointer;
+}
+
+.project-logo:hover {
+   background-color: #6c757d;
+}
