@@ -335,6 +335,28 @@
             </div>
           </div>
 
+          <!-- OpenEMR Begin -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="project-logo" data-bs-toggle="modal" data-bs-target="#openemrmodal">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                  <image href="./assets/img/openemr.svg" height="100%" width="100%" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Open source electronic health records and medical practice management solution</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                      onclick="window.open('https://www.open-emr.org/', '_blank')">Visit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+
           <!--
         <div class="col">
           <div class="card shadow-sm">
@@ -439,6 +461,28 @@
       </div>
     </div>
   </div>
+
+  <!-- OpenEMR Modal -->
+  <div class="modal fade" tabindex="-1" id="openemrmodal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="openemrModalCenteredScrollableTitle">OpenEMR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="./assets/img/openemr.svg" alt="Fantasy" width="100%">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"
+            onclick="window.open('https://www.open-emr.org/', '_blank')">Visit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>  
 
   <footer class="text-body-secondary py-5">
     <div class="container">
